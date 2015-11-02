@@ -1,0 +1,1 @@
+/Users/Leo/Documents/项目/趣吧公司/QBCamera/Build/Intermediates/ArchiveIntermediates/QBCamera/InstallationBuildProductsLocation/Applications/QBCamera.app

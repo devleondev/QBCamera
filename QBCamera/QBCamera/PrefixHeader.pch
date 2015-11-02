@@ -1,0 +1,20 @@
+//
+//  PrefixHeader.pch
+//  QBCamera
+//
+//  Created by LeoKing on 15/10/9.
+//  Copyright © 2015年 Qbar.Inc. All rights reserved.
+//
+#import <Foundation/Foundation.h>
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+typedef void(^QBCallback)(id sender);
+
+typedef enum : NSUInteger {
+    QBEditOptionType_Text,
+    QBEditOptionType_Audio,
+    QBEditOptionType_Image,
+} QBEditOptionType;
+
+#endif

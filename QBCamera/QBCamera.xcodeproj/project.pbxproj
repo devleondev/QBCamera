@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3018CF91BB3F19C0078ACBE /* BLLookUpFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3018CF81BB3F19C0078ACBE /* BLLookUpFilter.m */; settings = {ASSET_TAGS = (); }; };
+		B3018CFD1BB3F1CC0078ACBE /* DylanLookUp.png in Resources */ = {isa = PBXBuildFile; fileRef = B3018CFC1BB3F1CC0078ACBE /* DylanLookUp.png */; settings = {ASSET_TAGS = (); }; };
+		B3018CFF1BB3FF680078ACBE /* RedMelonLookUp.png in Resources */ = {isa = PBXBuildFile; fileRef = B3018CFE1BB3FF680078ACBE /* RedMelonLookUp.png */; settings = {ASSET_TAGS = (); }; };
+		B3018D011BB4034B0078ACBE /* MinusReverseLookUp.png in Resources */ = {isa = PBXBuildFile; fileRef = B3018D001BB4034B0078ACBE /* MinusReverseLookUp.png */; settings = {ASSET_TAGS = (); }; };
+		B30F85A81BA934DB00F5614A /* BLGreenBlueOverlayBlendFilter.fsh in Resources */ = {isa = PBXBuildFile; fileRef = B30F85A71BA934DB00F5614A /* BLGreenBlueOverlayBlendFilter.fsh */; };
+		B30F85AC1BA95F1700F5614A /* BLHighContrastFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B30F85AB1BA95F1700F5614A /* BLHighContrastFilter.m */; };
+		B31551221BB51D4C0019941F /* RGBAnimateView.m in Sources */ = {isa = PBXBuildFile; fileRef = B31551211BB51D4C0019941F /* RGBAnimateView.m */; settings = {ASSET_TAGS = (); }; };
+		B315512B1BB52A200019941F /* FeBasicAnimationBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = B315512A1BB52A200019941F /* FeBasicAnimationBlock.m */; settings = {ASSET_TAGS = (); }; };
+		B315512E1BB52A450019941F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B315512D1BB52A440019941F /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		B315513B1BB550D50019941F /* QBCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31551371BB550D50019941F /* QBCameraViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B315513C1BB550D50019941F /* QBPhotosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B315513A1BB550D50019941F /* QBPhotosViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B31551401BB551100019941F /* QBPhotosCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B315513F1BB551100019941F /* QBPhotosCollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		B31551421BB7D29C0019941F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31551411BB7D29C0019941F /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		B31551461BB7DA4A0019941F /* QBEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B31551451BB7DA4A0019941F /* QBEditViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B31988AB1B9B334200DDD87D /* SampleConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = B31988AA1B9B334200DDD87D /* SampleConfiguration.plist */; };
+		B32B6A8BB15DD14B6ED967A8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBE952917AC3218A132BE33 /* libPods.a */; };
+		B335B3BA1BC6B21000337A43 /* QBFiltersContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = B335B3B91BC6B21000337A43 /* QBFiltersContainerView.m */; settings = {ASSET_TAGS = (); }; };
+		B335B3BF1BC7CB5400337A43 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B335B3BE1BC7CB5400337A43 /* Camera.storyboard */; settings = {ASSET_TAGS = (); }; };
+		B3463D801B9AA70D00859383 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3463D7F1B9AA70D00859383 /* main.m */; };
+		B3463D831B9AA70D00859383 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3463D821B9AA70D00859383 /* AppDelegate.m */; };
+		B3463D891B9AA70D00859383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3463D871B9AA70D00859383 /* Main.storyboard */; };
+		B3463D8E1B9AA70D00859383 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3463D8C1B9AA70D00859383 /* LaunchScreen.xib */; };
+		B3463D9A1B9AA70D00859383 /* QBCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3463D991B9AA70D00859383 /* QBCameraTests.m */; };
+		B36C9D131BBDFD6F00352123 /* QBAbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B36C9D121BBDFD6F00352123 /* QBAbstractViewController.m */; settings = {ASSET_TAGS = (); }; };
+		B3A036AE1BAA589C000CF047 /* BLHardLightFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A036AD1BAA589C000CF047 /* BLHardLightFilter.m */; };
+		B3A036B31BAA9FDB000CF047 /* BLTwoInputFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3A036B21BAA9FDB000CF047 /* BLTwoInputFilter.m */; };
+		B3B04F981BCBE79A00E1D5B8 /* QBEditTextCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B04F971BCBE79A00E1D5B8 /* QBEditTextCustomView.m */; settings = {ASSET_TAGS = (); }; };
+		B3B04F9A1BCBE7B100E1D5B8 /* QBEditTextCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3B04F991BCBE7B100E1D5B8 /* QBEditTextCustomView.xib */; settings = {ASSET_TAGS = (); }; };
+		B3E6D3B31BABF40E0021E610 /* BLMaskFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E6D3B21BABF40E0021E610 /* BLMaskFilter.m */; };
+		B3E6D3B61BAC45D10021E610 /* GPUImageBloomFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E6D3B51BAC45D10021E610 /* GPUImageBloomFilter.m */; };
+		B3EB81B81BCA0BA2003D39F7 /* EditOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3EB81B71BCA0BA2003D39F7 /* EditOptions.plist */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3463D941B9AA70D00859383 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3463D721B9AA70D00859383 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3463D791B9AA70D00859383;
+			remoteInfo = QBCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		39ED20BA383D2E34B77FC00C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6CBE952917AC3218A132BE33 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3018CF71BB3F19B0078ACBE /* BLLookUpFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLLookUpFilter.h; sourceTree = "<group>"; };
+		B3018CF81BB3F19C0078ACBE /* BLLookUpFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLLookUpFilter.m; sourceTree = "<group>"; };
+		B3018CFC1BB3F1CC0078ACBE /* DylanLookUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DylanLookUp.png; sourceTree = "<group>"; };
+		B3018CFE1BB3FF680078ACBE /* RedMelonLookUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedMelonLookUp.png; sourceTree = "<group>"; };
+		B3018D001BB4034B0078ACBE /* MinusReverseLookUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MinusReverseLookUp.png; sourceTree = "<group>"; };
+		B30F85A71BA934DB00F5614A /* BLGreenBlueOverlayBlendFilter.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = BLGreenBlueOverlayBlendFilter.fsh; sourceTree = "<group>"; };
+		B30F85AA1BA95F1700F5614A /* BLHighContrastFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLHighContrastFilter.h; sourceTree = "<group>"; };
+		B30F85AB1BA95F1700F5614A /* BLHighContrastFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLHighContrastFilter.m; sourceTree = "<group>"; };
+		B31551201BB51D4C0019941F /* RGBAnimateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGBAnimateView.h; sourceTree = "<group>"; };
+		B31551211BB51D4C0019941F /* RGBAnimateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGBAnimateView.m; sourceTree = "<group>"; };
+		B31551291BB52A200019941F /* FeBasicAnimationBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeBasicAnimationBlock.h; sourceTree = "<group>"; };
+		B315512A1BB52A200019941F /* FeBasicAnimationBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeBasicAnimationBlock.m; sourceTree = "<group>"; };
+		B315512D1BB52A440019941F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B31551361BB550D50019941F /* QBCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBCameraViewController.h; sourceTree = "<group>"; };
+		B31551371BB550D50019941F /* QBCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBCameraViewController.m; sourceTree = "<group>"; };
+		B31551391BB550D50019941F /* QBPhotosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBPhotosViewController.h; sourceTree = "<group>"; };
+		B315513A1BB550D50019941F /* QBPhotosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBPhotosViewController.m; sourceTree = "<group>"; };
+		B315513E1BB551100019941F /* QBPhotosCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBPhotosCollectionViewCell.h; sourceTree = "<group>"; };
+		B315513F1BB551100019941F /* QBPhotosCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBPhotosCollectionViewCell.m; sourceTree = "<group>"; };
+		B31551411BB7D29C0019941F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B31551441BB7DA4A0019941F /* QBEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBEditViewController.h; sourceTree = "<group>"; };
+		B31551451BB7DA4A0019941F /* QBEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBEditViewController.m; sourceTree = "<group>"; };
+		B31988AA1B9B334200DDD87D /* SampleConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SampleConfiguration.plist; sourceTree = "<group>"; };
+		B335B3B81BC6B21000337A43 /* QBFiltersContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBFiltersContainerView.h; sourceTree = "<group>"; };
+		B335B3B91BC6B21000337A43 /* QBFiltersContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBFiltersContainerView.m; sourceTree = "<group>"; };
+		B335B3BD1BC754D800337A43 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B335B3BE1BC7CB5400337A43 /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		B3463D7A1B9AA70D00859383 /* QBCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QBCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3463D7E1B9AA70D00859383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3463D7F1B9AA70D00859383 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B3463D811B9AA70D00859383 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B3463D821B9AA70D00859383 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B3463D881B9AA70D00859383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3463D8D1B9AA70D00859383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B3463D931B9AA70D00859383 /* QBCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QBCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3463D981B9AA70D00859383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3463D991B9AA70D00859383 /* QBCameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QBCameraTests.m; sourceTree = "<group>"; };
+		B36C9D111BBDFD6F00352123 /* QBAbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAbstractViewController.h; sourceTree = "<group>"; };
+		B36C9D121BBDFD6F00352123 /* QBAbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBAbstractViewController.m; sourceTree = "<group>"; };
+		B3A036AC1BAA589C000CF047 /* BLHardLightFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLHardLightFilter.h; sourceTree = "<group>"; };
+		B3A036AD1BAA589C000CF047 /* BLHardLightFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLHardLightFilter.m; sourceTree = "<group>"; };
+		B3A036B11BAA9FDB000CF047 /* BLTwoInputFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTwoInputFilter.h; sourceTree = "<group>"; };
+		B3A036B21BAA9FDB000CF047 /* BLTwoInputFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLTwoInputFilter.m; sourceTree = "<group>"; };
+		B3B04F961BCBE79A00E1D5B8 /* QBEditTextCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBEditTextCustomView.h; sourceTree = "<group>"; };
+		B3B04F971BCBE79A00E1D5B8 /* QBEditTextCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QBEditTextCustomView.m; sourceTree = "<group>"; };
+		B3B04F991BCBE7B100E1D5B8 /* QBEditTextCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QBEditTextCustomView.xib; sourceTree = "<group>"; };
+		B3E6D3B11BABF40E0021E610 /* BLMaskFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLMaskFilter.h; sourceTree = "<group>"; };
+		B3E6D3B21BABF40E0021E610 /* BLMaskFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLMaskFilter.m; sourceTree = "<group>"; };
+		B3E6D3B41BAC45D10021E610 /* GPUImageBloomFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBloomFilter.h; sourceTree = "<group>"; };
+		B3E6D3B51BAC45D10021E610 /* GPUImageBloomFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBloomFilter.m; sourceTree = "<group>"; };
+		B3EB81B71BCA0BA2003D39F7 /* EditOptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EditOptions.plist; sourceTree = "<group>"; };
+		B7DC91B6AD30A6FD3365619D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3463D771B9AA70D00859383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B32B6A8BB15DD14B6ED967A8 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3463D901B9AA70D00859383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		382CFF556CFD4443FE8E92EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CBE952917AC3218A132BE33 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C9A46FAD9017B8A59CE2CC8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7DC91B6AD30A6FD3365619D /* Pods.debug.xcconfig */,
+				39ED20BA383D2E34B77FC00C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3018CF61BB3EDB10078ACBE /* LookUp */ = {
+			isa = PBXGroup;
+			children = (
+				B3018CF71BB3F19B0078ACBE /* BLLookUpFilter.h */,
+				B3018CF81BB3F19C0078ACBE /* BLLookUpFilter.m */,
+			);
+			path = LookUp;
+			sourceTree = "<group>";
+		};
+		B315511F1BB51D260019941F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3B04F911BCBE6E900E1D5B8 /* Edit */,
+				B31551201BB51D4C0019941F /* RGBAnimateView.h */,
+				B31551211BB51D4C0019941F /* RGBAnimateView.m */,
+				B335B3B81BC6B21000337A43 /* QBFiltersContainerView.h */,
+				B335B3B91BC6B21000337A43 /* QBFiltersContainerView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B31551231BB529EE0019941F /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				B31551291BB52A200019941F /* FeBasicAnimationBlock.h */,
+				B315512A1BB52A200019941F /* FeBasicAnimationBlock.m */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		B31551241BB529EE0019941F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B36C9D101BBDFD5600352123 /* Abstract */,
+				B31551431BB7DA280019941F /* Edit */,
+				B31551351BB550D50019941F /* Camera */,
+				B31551381BB550D50019941F /* Photos */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B31551281BB52A0E0019941F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B3463D871B9AA70D00859383 /* Main.storyboard */,
+				B3463D8C1B9AA70D00859383 /* LaunchScreen.xib */,
+				B335B3BE1BC7CB5400337A43 /* Camera.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B315512C1BB52A440019941F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B3EB81B61BCA0B86003D39F7 /* Config */,
+				B315512D1BB52A440019941F /* Images.xcassets */,
+				B31551411BB7D29C0019941F /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B31551351BB550D50019941F /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B31551361BB550D50019941F /* QBCameraViewController.h */,
+				B31551371BB550D50019941F /* QBCameraViewController.m */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		B31551381BB550D50019941F /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				B315513D1BB550E50019941F /* Cells */,
+				B31551391BB550D50019941F /* QBPhotosViewController.h */,
+				B315513A1BB550D50019941F /* QBPhotosViewController.m */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		B315513D1BB550E50019941F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B315513E1BB551100019941F /* QBPhotosCollectionViewCell.h */,
+				B315513F1BB551100019941F /* QBPhotosCollectionViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B31551431BB7DA280019941F /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				B31551441BB7DA4A0019941F /* QBEditViewController.h */,
+				B31551451BB7DA4A0019941F /* QBEditViewController.m */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		B31988A81B9B332D00DDD87D /* QBFilters */ = {
+			isa = PBXGroup;
+			children = (
+				B3018CF61BB3EDB10078ACBE /* LookUp */,
+				B38AFAA01B9C79A5003D984A /* Skin */,
+				B31988A91B9B334200DDD87D /* Assets */,
+			);
+			path = QBFilters;
+			sourceTree = "<group>";
+		};
+		B31988A91B9B334200DDD87D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B3018D001BB4034B0078ACBE /* MinusReverseLookUp.png */,
+				B3018CFE1BB3FF680078ACBE /* RedMelonLookUp.png */,
+				B3018CFC1BB3F1CC0078ACBE /* DylanLookUp.png */,
+				B31988AA1B9B334200DDD87D /* SampleConfiguration.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B3463D711B9AA70D00859383 = {
+			isa = PBXGroup;
+			children = (
+				B3463D7C1B9AA70D00859383 /* QBCamera */,
+				B3463D961B9AA70D00859383 /* QBCameraTests */,
+				B3463D7B1B9AA70D00859383 /* Products */,
+				9C9A46FAD9017B8A59CE2CC8 /* Pods */,
+				382CFF556CFD4443FE8E92EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3463D7B1B9AA70D00859383 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3463D7A1B9AA70D00859383 /* QBCamera.app */,
+				B3463D931B9AA70D00859383 /* QBCameraTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3463D7C1B9AA70D00859383 /* QBCamera */ = {
+			isa = PBXGroup;
+			children = (
+				B3463D811B9AA70D00859383 /* AppDelegate.h */,
+				B3463D821B9AA70D00859383 /* AppDelegate.m */,
+				B31551241BB529EE0019941F /* Controllers */,
+				B36C9D141BBE008600352123 /* Models */,
+				B31988A81B9B332D00DDD87D /* QBFilters */,
+				B31551281BB52A0E0019941F /* Storyboard */,
+				B315511F1BB51D260019941F /* Views */,
+				B31551231BB529EE0019941F /* Commons */,
+				B315512C1BB52A440019941F /* Assets */,
+				B3463D7D1B9AA70D00859383 /* Supporting Files */,
+			);
+			path = QBCamera;
+			sourceTree = "<group>";
+		};
+		B3463D7D1B9AA70D00859383 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3463D7E1B9AA70D00859383 /* Info.plist */,
+				B3463D7F1B9AA70D00859383 /* main.m */,
+				B335B3BD1BC754D800337A43 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3463D961B9AA70D00859383 /* QBCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3463D991B9AA70D00859383 /* QBCameraTests.m */,
+				B3463D971B9AA70D00859383 /* Supporting Files */,
+			);
+			path = QBCameraTests;
+			sourceTree = "<group>";
+		};
+		B3463D971B9AA70D00859383 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3463D981B9AA70D00859383 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B36C9D101BBDFD5600352123 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				B36C9D111BBDFD6F00352123 /* QBAbstractViewController.h */,
+				B36C9D121BBDFD6F00352123 /* QBAbstractViewController.m */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		B36C9D141BBE008600352123 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B36C9D151BBE00B500352123 /* Material */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B36C9D151BBE00B500352123 /* Material */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Material;
+			sourceTree = "<group>";
+		};
+		B38AFAA01B9C79A5003D984A /* Skin */ = {
+			isa = PBXGroup;
+			children = (
+				B30F85A71BA934DB00F5614A /* BLGreenBlueOverlayBlendFilter.fsh */,
+				B30F85AA1BA95F1700F5614A /* BLHighContrastFilter.h */,
+				B30F85AB1BA95F1700F5614A /* BLHighContrastFilter.m */,
+				B3A036AC1BAA589C000CF047 /* BLHardLightFilter.h */,
+				B3A036AD1BAA589C000CF047 /* BLHardLightFilter.m */,
+				B3A036B11BAA9FDB000CF047 /* BLTwoInputFilter.h */,
+				B3A036B21BAA9FDB000CF047 /* BLTwoInputFilter.m */,
+				B3E6D3B11BABF40E0021E610 /* BLMaskFilter.h */,
+				B3E6D3B21BABF40E0021E610 /* BLMaskFilter.m */,
+				B3E6D3B41BAC45D10021E610 /* GPUImageBloomFilter.h */,
+				B3E6D3B51BAC45D10021E610 /* GPUImageBloomFilter.m */,
+			);
+			path = Skin;
+			sourceTree = "<group>";
+		};
+		B3B04F911BCBE6E900E1D5B8 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				B3B04F951BCBE79A00E1D5B8 /* Text */,
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		B3B04F951BCBE79A00E1D5B8 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				B3B04F961BCBE79A00E1D5B8 /* QBEditTextCustomView.h */,
+				B3B04F971BCBE79A00E1D5B8 /* QBEditTextCustomView.m */,
+				B3B04F991BCBE7B100E1D5B8 /* QBEditTextCustomView.xib */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		B3EB81B61BCA0B86003D39F7 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B3EB81B71BCA0BA2003D39F7 /* EditOptions.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3463D791B9AA70D00859383 /* QBCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3463D9D1B9AA70D00859383 /* Build configuration list for PBXNativeTarget "QBCamera" */;
+			buildPhases = (
+				2660D4A1F5529BF458731ABD /* Check Pods Manifest.lock */,
+				B3463D761B9AA70D00859383 /* Sources */,
+				B3463D771B9AA70D00859383 /* Frameworks */,
+				B3463D781B9AA70D00859383 /* Resources */,
+				A970FEEE3DC0763FC73F8005 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QBCamera;
+			productName = QBCamera;
+			productReference = B3463D7A1B9AA70D00859383 /* QBCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3463D921B9AA70D00859383 /* QBCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3463DA01B9AA70D00859383 /* Build configuration list for PBXNativeTarget "QBCameraTests" */;
+			buildPhases = (
+				B3463D8F1B9AA70D00859383 /* Sources */,
+				B3463D901B9AA70D00859383 /* Frameworks */,
+				B3463D911B9AA70D00859383 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3463D951B9AA70D00859383 /* PBXTargetDependency */,
+			);
+			name = QBCameraTests;
+			productName = QBCameraTests;
+			productReference = B3463D931B9AA70D00859383 /* QBCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3463D721B9AA70D00859383 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Qbar.Inc;
+				TargetAttributes = {
+					B3463D791B9AA70D00859383 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = S56BSYT3ZD;
+					};
+					B3463D921B9AA70D00859383 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = B3463D791B9AA70D00859383;
+					};
+				};
+			};
+			buildConfigurationList = B3463D751B9AA70D00859383 /* Build configuration list for PBXProject "QBCamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3463D711B9AA70D00859383;
+			productRefGroup = B3463D7B1B9AA70D00859383 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3463D791B9AA70D00859383 /* QBCamera */,
+				B3463D921B9AA70D00859383 /* QBCameraTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3463D781B9AA70D00859383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3EB81B81BCA0BA2003D39F7 /* EditOptions.plist in Resources */,
+				B3463D891B9AA70D00859383 /* Main.storyboard in Resources */,
+				B315512E1BB52A450019941F /* Images.xcassets in Resources */,
+				B30F85A81BA934DB00F5614A /* BLGreenBlueOverlayBlendFilter.fsh in Resources */,
+				B3018CFD1BB3F1CC0078ACBE /* DylanLookUp.png in Resources */,
+				B31988AB1B9B334200DDD87D /* SampleConfiguration.plist in Resources */,
+				B3018CFF1BB3FF680078ACBE /* RedMelonLookUp.png in Resources */,
+				B3463D8E1B9AA70D00859383 /* LaunchScreen.xib in Resources */,
+				B31551421BB7D29C0019941F /* Assets.xcassets in Resources */,
+				B3B04F9A1BCBE7B100E1D5B8 /* QBEditTextCustomView.xib in Resources */,
+				B3018D011BB4034B0078ACBE /* MinusReverseLookUp.png in Resources */,
+				B335B3BF1BC7CB5400337A43 /* Camera.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3463D911B9AA70D00859383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2660D4A1F5529BF458731ABD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A970FEEE3DC0763FC73F8005 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3463D761B9AA70D00859383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3B04F981BCBE79A00E1D5B8 /* QBEditTextCustomView.m in Sources */,
+				B315513C1BB550D50019941F /* QBPhotosViewController.m in Sources */,
+				B31551401BB551100019941F /* QBPhotosCollectionViewCell.m in Sources */,
+				B3463D831B9AA70D00859383 /* AppDelegate.m in Sources */,
+				B3E6D3B31BABF40E0021E610 /* BLMaskFilter.m in Sources */,
+				B31551221BB51D4C0019941F /* RGBAnimateView.m in Sources */,
+				B36C9D131BBDFD6F00352123 /* QBAbstractViewController.m in Sources */,
+				B31551461BB7DA4A0019941F /* QBEditViewController.m in Sources */,
+				B3463D801B9AA70D00859383 /* main.m in Sources */,
+				B315512B1BB52A200019941F /* FeBasicAnimationBlock.m in Sources */,
+				B30F85AC1BA95F1700F5614A /* BLHighContrastFilter.m in Sources */,
+				B3018CF91BB3F19C0078ACBE /* BLLookUpFilter.m in Sources */,
+				B3A036AE1BAA589C000CF047 /* BLHardLightFilter.m in Sources */,
+				B315513B1BB550D50019941F /* QBCameraViewController.m in Sources */,
+				B335B3BA1BC6B21000337A43 /* QBFiltersContainerView.m in Sources */,
+				B3E6D3B61BAC45D10021E610 /* GPUImageBloomFilter.m in Sources */,
+				B3A036B31BAA9FDB000CF047 /* BLTwoInputFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3463D8F1B9AA70D00859383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3463D9A1B9AA70D00859383 /* QBCameraTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3463D951B9AA70D00859383 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3463D791B9AA70D00859383 /* QBCamera */;
+			targetProxy = B3463D941B9AA70D00859383 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3463D871B9AA70D00859383 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3463D881B9AA70D00859383 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B3463D8C1B9AA70D00859383 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3463D8D1B9AA70D00859383 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3463D9B1B9AA70D00859383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B3463D9C1B9AA70D00859383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3463D9E1B9AA70D00859383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7DC91B6AD30A6FD3365619D /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QBCamera/PrefixHeader.pch";
+				INFOPLIST_FILE = QBCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TStudio.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		B3463D9F1B9AA70D00859383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39ED20BA383D2E34B77FC00C /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/QBCamera/PrefixHeader.pch";
+				INFOPLIST_FILE = QBCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TStudio.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		B3463DA11B9AA70D00859383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QBCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TStudio.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QBCamera.app/QBCamera";
+			};
+			name = Debug;
+		};
+		B3463DA21B9AA70D00859383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QBCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TStudio.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QBCamera.app/QBCamera";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3463D751B9AA70D00859383 /* Build configuration list for PBXProject "QBCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3463D9B1B9AA70D00859383 /* Debug */,
+				B3463D9C1B9AA70D00859383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3463D9D1B9AA70D00859383 /* Build configuration list for PBXNativeTarget "QBCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3463D9E1B9AA70D00859383 /* Debug */,
+				B3463D9F1B9AA70D00859383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3463DA01B9AA70D00859383 /* Build configuration list for PBXNativeTarget "QBCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3463DA11B9AA70D00859383 /* Debug */,
+				B3463DA21B9AA70D00859383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3463D721B9AA70D00859383 /* Project object */;
+}

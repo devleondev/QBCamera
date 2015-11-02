@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1017" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="DuR-dS-gQt">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="byH-Fb-ClZ">
+            <objects>
+                <viewController storyboardIdentifier="QBCameraViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DuR-dS-gQt" customClass="QBCameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L75-p5-2FW"/>
+                        <viewControllerLayoutGuide type="bottom" id="LEu-uA-xpM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uuq-7A-mg0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Dt-iQ-LlJ" customClass="GPUImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="426"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jH4-0o-oeD">
+                                <rect key="frame" x="123" y="463" width="74" height="74"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gOO-Az-uCw">
+                                <rect key="frame" x="126" y="466" width="68" height="68"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgN-FA-Syy">
+                                <rect key="frame" x="128" y="468" width="64" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchDownCaptureButton:" destination="DuR-dS-gQt" eventType="touchUpInside" id="NX0-yG-vp6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1CM-LW-Vbi">
+                                <rect key="frame" x="20" y="478" width="46" height="46"/>
+                                <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <segue destination="rNe-hj-RCd" kind="modal" id="mIu-Zu-1ub"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ic9-KB-yrV" customClass="RGBAnimateView">
+                                <rect key="frame" x="256" y="478" width="44" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_filters_btn" translatesAutoresizingMaskIntoConstraints="NO" id="e8q-t1-u8U">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="IKF-L9-zrK"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="cameraImageView" destination="9Dt-iQ-LlJ" id="Gsf-hb-m44"/>
+                        <outlet property="captureButton" destination="RgN-FA-Syy" id="vhy-GU-i2F"/>
+                        <outlet property="captureInView" destination="jH4-0o-oeD" id="2kC-Xs-j8H"/>
+                        <outlet property="captureOutView" destination="gOO-Az-uCw" id="8Td-fN-uuv"/>
+                        <outlet property="filtersButton" destination="Ic9-KB-yrV" id="CoG-zH-U8a"/>
+                        <outlet property="photobrowserButton" destination="1CM-LW-Vbi" id="Zz1-GS-O4B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="flS-AT-QDy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-271" y="100"/>
+        </scene>
+        <!--相册-->
+        <scene sceneID="UGV-yf-Sde">
+            <objects>
+                <viewController storyboardIdentifier="QBPhotosViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pUa-3a-tpP" customClass="QBPhotosViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ugj-3G-ZCM"/>
+                        <viewControllerLayoutGuide type="bottom" id="EFZ-5a-gi5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YE1-op-Snd">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="w4Q-nC-89n">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lb8-SM-VyB">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="QBPhotosCollectionViewCell" reuseIdentifier="QBPhotosCollectionViewCell" id="471-w2-z5I" customClass="QBPhotosCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="izi-j9-qZf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <color key="backgroundColor" white="1" alpha="0.14999999999999999" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <size key="customSize" width="100" height="100"/>
+                                        <connections>
+                                            <outlet property="imgView" destination="izi-j9-qZf" id="AWl-Ho-9R1"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="pUa-3a-tpP" id="8Ua-fJ-rS1"/>
+                                    <outlet property="delegate" destination="pUa-3a-tpP" id="93F-Ty-mxo"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="相册" id="fCZ-ME-YCb"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="photosCollectionView" destination="w4Q-nC-89n" id="AUH-j3-pUo"/>
+                        <segue destination="g2D-5k-YUS" kind="push" identifier="PB_EDIT" id="MsE-j1-LvN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYd-Vy-w8Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526" y="100"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zOw-cM-NNQ">
+            <objects>
+                <navigationController id="rNe-hj-RCd" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" id="ejJ-z7-JGF"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BSx-Gd-C4F">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pUa-3a-tpP" kind="relationship" relationship="rootViewController" id="fly-M3-8Rt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NdY-Rf-AqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="100"/>
+        </scene>
+        <!--编辑-->
+        <scene sceneID="9JX-BB-Dl0">
+            <objects>
+                <viewController storyboardIdentifier="QBEditViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="g2D-5k-YUS" customClass="QBEditViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o5m-m8-uln"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uc2-cq-SsT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wpC-7G-PWU">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Cw-JW-llx">
+                                <rect key="frame" x="10" y="8" width="300" height="400"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zre-t7-w9v">
+                                <rect key="frame" x="0.0" y="416" width="320" height="88"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="编辑" id="HlC-No-0fr"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="imgView" destination="8Cw-JW-llx" id="TpN-Ay-O4B"/>
+                        <outlet property="scrollView" destination="Zre-t7-w9v" id="Tql-OX-9wS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjj-vQ-GKP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_filters_btn" width="75" height="75"/>
+    </resources>
+</document>

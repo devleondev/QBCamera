@@ -445,7 +445,7 @@
 				TargetAttributes = {
 					B3463D791B9AA70D00859383 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = S56BSYT3ZD;
+						DevelopmentTeam = 8DL23322FW;
 					};
 					B3463D921B9AA70D00859383 = {
 						CreatedOnToolsVersion = 6.4;
@@ -691,7 +691,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/QBCamera/PrefixHeader.pch";
 				INFOPLIST_FILE = QBCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TStudio.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codoon.QBCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -708,7 +708,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/QBCamera/PrefixHeader.pch";
 				INFOPLIST_FILE = QBCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TStudio.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codoon.QBCamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
